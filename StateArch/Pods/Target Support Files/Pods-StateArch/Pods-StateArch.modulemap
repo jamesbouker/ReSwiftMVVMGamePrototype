@@ -1,0 +1,6 @@
+framework module Pods_StateArch {
+  umbrella header "Pods-StateArch-umbrella.h"
+
+  export *
+  module * { export * }
+}

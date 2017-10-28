@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4CEF3B191582549E2105C02 /* Pods_StateArch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB67806DB1115971B84DA88 /* Pods_StateArch.framework */; };
+		BDF316792A076A1B2AC177AC /* Pods_StateArchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7DBF79B9D746E6923E18B2 /* Pods_StateArchTests.framework */; };
+		F53D30DB1FA432CA003440A3 /* GameReducerRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53D30DA1FA432CA003440A3 /* GameReducerRecorder.swift */; };
+		F53D30DD1FA4F202003440A3 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53D30DC1FA4F202003440A3 /* GameViewModel.swift */; };
+		F56C1D7F1F9FE73400363849 /* GameReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C1D7E1F9FE73400363849 /* GameReducer.swift */; };
+		F56C1D811F9FE88100363849 /* PlayerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C1D801F9FE88100363849 /* PlayerAction.swift */; };
+		F56C1D861F9FF3A800363849 /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C1D851F9FF3A800363849 /* SKNode+Extensions.swift */; };
+		F56C1D881F9FF4FB00363849 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584F5291F9C50980006E96A /* GameViewController.swift */; };
+		F584F5221F9C50980006E96A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584F5211F9C50980006E96A /* AppDelegate.swift */; };
+		F584F5241F9C50980006E96A /* GameView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F584F5231F9C50980006E96A /* GameView.sks */; };
+		F584F5281F9C50980006E96A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584F5271F9C50980006E96A /* GameView.swift */; };
+		F584F52D1F9C50980006E96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F584F52B1F9C50980006E96A /* Main.storyboard */; };
+		F584F52F1F9C50980006E96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F584F52E1F9C50980006E96A /* Assets.xcassets */; };
+		F584F5321F9C50980006E96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F584F5301F9C50980006E96A /* LaunchScreen.storyboard */; };
+		F584F53D1F9C50980006E96A /* StateArchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584F53C1F9C50980006E96A /* StateArchTests.swift */; };
+		F584F54A1F9D2B150006E96A /* RenderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584F5491F9D2B150006E96A /* RenderItem.swift */; };
+		F584F54C1F9D2B3C0006E96A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584F54B1F9D2B3C0006E96A /* Constants.swift */; };
+		F584F54E1F9D2B5F0006E96A /* MapLoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584F54D1F9D2B5F0006E96A /* MapLoc.swift */; };
+		F5D510A51F9E9451000A52B8 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D510A41F9E9451000A52B8 /* CGPoint+Extensions.swift */; };
+		F5DF8CDB1F9E87F200051428 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF8CDA1F9E87F200051428 /* GameState.swift */; };
+		F5DF8CDD1F9E89E600051428 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF8CDC1F9E89E600051428 /* Int+Extensions.swift */; };
+		F5DF8CE11F9E8C0900051428 /* GameStateDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF8CE01F9E8C0900051428 /* GameStateDiff.swift */; };
+		F5DF8CE31F9E8D0F00051428 /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF8CE21F9E8D0F00051428 /* Codable+Extensions.swift */; };
+		F5E7A3081FA047410083F2DE /* GameViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E7A3071FA047410083F2DE /* GameViewLayout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F584F5391F9C50980006E96A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F584F5161F9C50980006E96A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F584F51D1F9C50980006E96A;
+			remoteInfo = StateArch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BB67806DB1115971B84DA88 /* Pods_StateArch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StateArch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60F8880D9F4AE23836BCAAEC /* Pods-StateArchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateArchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StateArchTests/Pods-StateArchTests.release.xcconfig"; sourceTree = "<group>"; };
+		83843A98FAD56D7E3732B40C /* Pods-StateArch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateArch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StateArch/Pods-StateArch.debug.xcconfig"; sourceTree = "<group>"; };
+		EF7DBF79B9D746E6923E18B2 /* Pods_StateArchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StateArchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D170E51E567617698E750D /* Pods-StateArch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateArch.release.xcconfig"; path = "Pods/Target Support Files/Pods-StateArch/Pods-StateArch.release.xcconfig"; sourceTree = "<group>"; };
+		F53D30DA1FA432CA003440A3 /* GameReducerRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameReducerRecorder.swift; sourceTree = "<group>"; };
+		F53D30DC1FA4F202003440A3 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F56C1D7E1F9FE73400363849 /* GameReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameReducer.swift; sourceTree = "<group>"; };
+		F56C1D801F9FE88100363849 /* PlayerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAction.swift; sourceTree = "<group>"; };
+		F56C1D851F9FF3A800363849 /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		F584F51E1F9C50980006E96A /* StateArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F584F5211F9C50980006E96A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F584F5231F9C50980006E96A /* GameView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameView.sks; sourceTree = "<group>"; };
+		F584F5271F9C50980006E96A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		F584F5291F9C50980006E96A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F584F52C1F9C50980006E96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F584F52E1F9C50980006E96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F584F5311F9C50980006E96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F584F5331F9C50980006E96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F584F5381F9C50980006E96A /* StateArchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateArchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F584F53C1F9C50980006E96A /* StateArchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateArchTests.swift; sourceTree = "<group>"; };
+		F584F53E1F9C50980006E96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F584F5491F9D2B150006E96A /* RenderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderItem.swift; sourceTree = "<group>"; };
+		F584F54B1F9D2B3C0006E96A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F584F54D1F9D2B5F0006E96A /* MapLoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLoc.swift; sourceTree = "<group>"; };
+		F5D510A41F9E9451000A52B8 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		F5DF8CDA1F9E87F200051428 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		F5DF8CDC1F9E89E600051428 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		F5DF8CE01F9E8C0900051428 /* GameStateDiff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStateDiff.swift; sourceTree = "<group>"; };
+		F5DF8CE21F9E8D0F00051428 /* Codable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extensions.swift"; sourceTree = "<group>"; };
+		F5E7A3071FA047410083F2DE /* GameViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewLayout.swift; sourceTree = "<group>"; };
+		F74FD162DF6A3A5D8B0172FA /* Pods-StateArchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateArchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StateArchTests/Pods-StateArchTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F584F51B1F9C50980006E96A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CEF3B191582549E2105C02 /* Pods_StateArch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F584F5351F9C50980006E96A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF316792A076A1B2AC177AC /* Pods_StateArchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B48ECD12F550CE922EEB1EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83843A98FAD56D7E3732B40C /* Pods-StateArch.debug.xcconfig */,
+				F1D170E51E567617698E750D /* Pods-StateArch.release.xcconfig */,
+				F74FD162DF6A3A5D8B0172FA /* Pods-StateArchTests.debug.xcconfig */,
+				60F8880D9F4AE23836BCAAEC /* Pods-StateArchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE1932C4E7924F9BA7D20F0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BB67806DB1115971B84DA88 /* Pods_StateArch.framework */,
+				EF7DBF79B9D746E6923E18B2 /* Pods_StateArchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F53D30DE1FA4F228003440A3 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				F56C1D801F9FE88100363849 /* PlayerAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		F53D30DF1FA4F238003440A3 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				F5DF8CDA1F9E87F200051428 /* GameState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		F53D30E01FA4F25C003440A3 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				F584F5271F9C50980006E96A /* GameView.swift */,
+				F5E7A3071FA047410083F2DE /* GameViewLayout.swift */,
+				F53D30DC1FA4F202003440A3 /* GameViewModel.swift */,
+				F5DF8CE01F9E8C0900051428 /* GameStateDiff.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		F53D30E11FA51211003440A3 /* ReSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F53D30DE1FA4F228003440A3 /* Actions */,
+				F5D510A21F9E90FC000A52B8 /* Reducers */,
+				F53D30DF1FA4F238003440A3 /* States */,
+			);
+			path = ReSwift;
+			sourceTree = "<group>";
+		};
+		F56C1D841F9FF39600363849 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5DF8CDC1F9E89E600051428 /* Int+Extensions.swift */,
+				F5DF8CE21F9E8D0F00051428 /* Codable+Extensions.swift */,
+				F5D510A41F9E9451000A52B8 /* CGPoint+Extensions.swift */,
+				F56C1D851F9FF3A800363849 /* SKNode+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F584F5151F9C50980006E96A = {
+			isa = PBXGroup;
+			children = (
+				F584F5201F9C50980006E96A /* StateArch */,
+				F584F53B1F9C50980006E96A /* StateArchTests */,
+				F584F51F1F9C50980006E96A /* Products */,
+				7B48ECD12F550CE922EEB1EA /* Pods */,
+				AE1932C4E7924F9BA7D20F0B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F584F51F1F9C50980006E96A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F584F51E1F9C50980006E96A /* StateArch.app */,
+				F584F5381F9C50980006E96A /* StateArchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F584F5201F9C50980006E96A /* StateArch */ = {
+			isa = PBXGroup;
+			children = (
+				F584F5481F9D2A820006E96A /* Resources */,
+				F584F5471F9D2A000006E96A /* Source */,
+			);
+			path = StateArch;
+			sourceTree = "<group>";
+		};
+		F584F53B1F9C50980006E96A /* StateArchTests */ = {
+			isa = PBXGroup;
+			children = (
+				F584F53E1F9C50980006E96A /* Info.plist */,
+				F584F53C1F9C50980006E96A /* StateArchTests.swift */,
+			);
+			path = StateArchTests;
+			sourceTree = "<group>";
+		};
+		F584F5471F9D2A000006E96A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F584F54F1F9D2C970006E96A /* App */,
+				F56C1D841F9FF39600363849 /* Extensions */,
+				F584F5511F9D2CAE0006E96A /* Game */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F584F5481F9D2A820006E96A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F584F52E1F9C50980006E96A /* Assets.xcassets */,
+				F584F5231F9C50980006E96A /* GameView.sks */,
+				F584F5331F9C50980006E96A /* Info.plist */,
+				F584F5301F9C50980006E96A /* LaunchScreen.storyboard */,
+				F584F52B1F9C50980006E96A /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F584F54F1F9D2C970006E96A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F584F5211F9C50980006E96A /* AppDelegate.swift */,
+				F584F54B1F9D2B3C0006E96A /* Constants.swift */,
+				F584F5291F9C50980006E96A /* GameViewController.swift */,
+				F584F54D1F9D2B5F0006E96A /* MapLoc.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F584F5511F9D2CAE0006E96A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				F584F5491F9D2B150006E96A /* RenderItem.swift */,
+				F53D30E01FA4F25C003440A3 /* MVVM */,
+				F53D30E11FA51211003440A3 /* ReSwift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		F5D510A21F9E90FC000A52B8 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				F56C1D7E1F9FE73400363849 /* GameReducer.swift */,
+				F53D30DA1FA432CA003440A3 /* GameReducerRecorder.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F584F51D1F9C50980006E96A /* StateArch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F584F5411F9C50980006E96A /* Build configuration list for PBXNativeTarget "StateArch" */;
+			buildPhases = (
+				2A79D9544DDB3B88F6A5BD27 /* [CP] Check Pods Manifest.lock */,
+				F584F51A1F9C50980006E96A /* Sources */,
+				F584F51B1F9C50980006E96A /* Frameworks */,
+				F584F51C1F9C50980006E96A /* Resources */,
+				C8EADA9A4484513E92FFA2DF /* [CP] Embed Pods Frameworks */,
+				507D25FE9C31EA1890549392 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StateArch;
+			productName = StateArch;
+			productReference = F584F51E1F9C50980006E96A /* StateArch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F584F5371F9C50980006E96A /* StateArchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F584F5441F9C50980006E96A /* Build configuration list for PBXNativeTarget "StateArchTests" */;
+			buildPhases = (
+				C8E23B9A0FBEEDD2C51C74B9 /* [CP] Check Pods Manifest.lock */,
+				F584F5341F9C50980006E96A /* Sources */,
+				F584F5351F9C50980006E96A /* Frameworks */,
+				F584F5361F9C50980006E96A /* Resources */,
+				248F9214A99B2AA7893BC678 /* [CP] Embed Pods Frameworks */,
+				9FBA6B07DB7DE430643F8F0F /* [CP] Copy Pods Resources */,
+				F56C1D891F9FF70B00363849 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F584F53A1F9C50980006E96A /* PBXTargetDependency */,
+			);
+			name = StateArchTests;
+			productName = StateArchTests;
+			productReference = F584F5381F9C50980006E96A /* StateArchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F584F5161F9C50980006E96A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = JimmyBouker;
+				TargetAttributes = {
+					F584F51D1F9C50980006E96A = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					F584F5371F9C50980006E96A = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F584F51D1F9C50980006E96A;
+					};
+				};
+			};
+			buildConfigurationList = F584F5191F9C50980006E96A /* Build configuration list for PBXProject "StateArch" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F584F5151F9C50980006E96A;
+			productRefGroup = F584F51F1F9C50980006E96A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F584F51D1F9C50980006E96A /* StateArch */,
+				F584F5371F9C50980006E96A /* StateArchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F584F51C1F9C50980006E96A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F584F52D1F9C50980006E96A /* Main.storyboard in Resources */,
+				F584F5241F9C50980006E96A /* GameView.sks in Resources */,
+				F584F52F1F9C50980006E96A /* Assets.xcassets in Resources */,
+				F584F5321F9C50980006E96A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F584F5361F9C50980006E96A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		248F9214A99B2AA7893BC678 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StateArchTests/Pods-StateArchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A79D9544DDB3B88F6A5BD27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StateArch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		507D25FE9C31EA1890549392 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StateArch/Pods-StateArch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FBA6B07DB7DE430643F8F0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StateArchTests/Pods-StateArchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E23B9A0FBEEDD2C51C74B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StateArchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8EADA9A4484513E92FFA2DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StateArch/Pods-StateArch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bond/Bond.framework",
+				"${BUILT_PRODUCTS_DIR}/Differ/Differ.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StateArch/Pods-StateArch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56C1D891F9FF70B00363849 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F584F51A1F9C50980006E96A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DF8CDB1F9E87F200051428 /* GameState.swift in Sources */,
+				F56C1D861F9FF3A800363849 /* SKNode+Extensions.swift in Sources */,
+				F584F54C1F9D2B3C0006E96A /* Constants.swift in Sources */,
+				F584F5281F9C50980006E96A /* GameView.swift in Sources */,
+				F56C1D7F1F9FE73400363849 /* GameReducer.swift in Sources */,
+				F5DF8CE11F9E8C0900051428 /* GameStateDiff.swift in Sources */,
+				F5E7A3081FA047410083F2DE /* GameViewLayout.swift in Sources */,
+				F584F54A1F9D2B150006E96A /* RenderItem.swift in Sources */,
+				F5DF8CDD1F9E89E600051428 /* Int+Extensions.swift in Sources */,
+				F53D30DB1FA432CA003440A3 /* GameReducerRecorder.swift in Sources */,
+				F56C1D811F9FE88100363849 /* PlayerAction.swift in Sources */,
+				F584F5221F9C50980006E96A /* AppDelegate.swift in Sources */,
+				F53D30DD1FA4F202003440A3 /* GameViewModel.swift in Sources */,
+				F56C1D881F9FF4FB00363849 /* GameViewController.swift in Sources */,
+				F584F54E1F9D2B5F0006E96A /* MapLoc.swift in Sources */,
+				F5D510A51F9E9451000A52B8 /* CGPoint+Extensions.swift in Sources */,
+				F5DF8CE31F9E8D0F00051428 /* Codable+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F584F5341F9C50980006E96A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F584F53D1F9C50980006E96A /* StateArchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F584F53A1F9C50980006E96A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F584F51D1F9C50980006E96A /* StateArch */;
+			targetProxy = F584F5391F9C50980006E96A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F584F52B1F9C50980006E96A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F584F52C1F9C50980006E96A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F584F5301F9C50980006E96A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F584F5311F9C50980006E96A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F584F53F1F9C50980006E96A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F584F5401F9C50980006E96A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F584F5421F9C50980006E96A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83843A98FAD56D7E3732B40C /* Pods-StateArch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KM367XE7J;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = StateArch/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DREPLAY";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JimmyBouker.StateArch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F584F5431F9C50980006E96A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D170E51E567617698E750D /* Pods-StateArch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KM367XE7J;
+				INFOPLIST_FILE = StateArch/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JimmyBouker.StateArch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F584F5451F9C50980006E96A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74FD162DF6A3A5D8B0172FA /* Pods-StateArchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KM367XE7J;
+				INFOPLIST_FILE = StateArchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JimmyBouker.StateArchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StateArch.app/StateArch";
+			};
+			name = Debug;
+		};
+		F584F5461F9C50980006E96A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F8880D9F4AE23836BCAAEC /* Pods-StateArchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KM367XE7J;
+				INFOPLIST_FILE = StateArchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JimmyBouker.StateArchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StateArch.app/StateArch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F584F5191F9C50980006E96A /* Build configuration list for PBXProject "StateArch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F584F53F1F9C50980006E96A /* Debug */,
+				F584F5401F9C50980006E96A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F584F5411F9C50980006E96A /* Build configuration list for PBXNativeTarget "StateArch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F584F5421F9C50980006E96A /* Debug */,
+				F584F5431F9C50980006E96A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F584F5441F9C50980006E96A /* Build configuration list for PBXNativeTarget "StateArchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F584F5451F9C50980006E96A /* Debug */,
+				F584F5461F9C50980006E96A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F584F5161F9C50980006E96A /* Project object */;
+}

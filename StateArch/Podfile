@@ -1,0 +1,12 @@
+platform :ios, '11.0'
+
+target 'StateArch' do
+  use_frameworks!
+  pod 'ReSwift'
+  pod 'Bond'
+
+  target 'StateArchTests' do
+    inherit! :search_paths
+    pod 'SwiftLint'
+  end
+end
