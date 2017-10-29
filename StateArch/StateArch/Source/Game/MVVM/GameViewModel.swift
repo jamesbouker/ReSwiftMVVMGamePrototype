@@ -27,7 +27,6 @@ class GameViewModel: StoreSubscriber {
     private var actionQueue = [PlayerAction]()
     private var isAnimating = false
 
-
     // MVVM
     var action = Observable<SKAction?>(nil)
 
