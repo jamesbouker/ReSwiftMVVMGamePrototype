@@ -7,16 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5EF8209C93B313329756C658 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56672943FAE7F6BC33E15081 /* AssetsLibrary.framework */; };
-		63EEF49100AD68110EB5C350 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A7C428F886FEAE07E9FB91 /* CoreMedia.framework */; };
-		6887F66617FEC6BD7B62C4AE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2B62D0F7EDE0B3528AD32C /* SystemConfiguration.framework */; };
-		719E76582A7683AF54D6F1C4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B779CEAA46241AAD12B0698 /* AVFoundation.framework */; };
-		9FA292B82DCAE83DAA6A6C94 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE6B2938AD2F2639CD4F696 /* BuddyBuildSDK.framework */; };
 		A4CEF3B191582549E2105C02 /* Pods_StateArch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB67806DB1115971B84DA88 /* Pods_StateArch.framework */; };
 		BDF316792A076A1B2AC177AC /* Pods_StateArchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7DBF79B9D746E6923E18B2 /* Pods_StateArchTests.framework */; };
-		C3459C22DEE85F8AC81C5B4E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD60446261765702948028E /* QuartzCore.framework */; };
-		C5000343C6B97147B400BB5E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E9A10C0CCB4578E05689A8 /* CoreVideo.framework */; };
-		CEC7B120BF34B45F5A9B7B43 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7734020020AB5EB1C92FB2CF /* CoreTelephony.framework */; };
 		F53D30DB1FA432CA003440A3 /* GameReducerRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53D30DA1FA432CA003440A3 /* GameReducerRecorder.swift */; };
 		F53D30DD1FA4F202003440A3 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53D30DC1FA4F202003440A3 /* GameViewModel.swift */; };
 		F56C1D7F1F9FE73400363849 /* GameReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C1D7E1F9FE73400363849 /* GameReducer.swift */; };
@@ -39,7 +31,6 @@
 		F5DF8CE11F9E8C0900051428 /* GameStateDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF8CE01F9E8C0900051428 /* GameStateDiff.swift */; };
 		F5DF8CE31F9E8D0F00051428 /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF8CE21F9E8D0F00051428 /* Codable+Extensions.swift */; };
 		F5E7A3081FA047410083F2DE /* GameViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E7A3071FA047410083F2DE /* GameViewLayout.swift */; };
-		F6DB2FB0E83841FD4F7F191C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFB28CBC508D21163ABB0BE /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,19 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CE6B2938AD2F2639CD4F696 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuddyBuildSDK.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		1BB67806DB1115971B84DA88 /* Pods_StateArch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StateArch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56672943FAE7F6BC33E15081 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		5B779CEAA46241AAD12B0698 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		5F2B62D0F7EDE0B3528AD32C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		60F8880D9F4AE23836BCAAEC /* Pods-StateArchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateArchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StateArchTests/Pods-StateArchTests.release.xcconfig"; sourceTree = "<group>"; };
-		7734020020AB5EB1C92FB2CF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		83843A98FAD56D7E3732B40C /* Pods-StateArch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateArch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StateArch/Pods-StateArch.debug.xcconfig"; sourceTree = "<group>"; };
-		8DFB28CBC508D21163ABB0BE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		93E9A10C0CCB4578E05689A8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		94A7C428F886FEAE07E9FB91 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		9FD60446261765702948028E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		E508535A74F3823C8789CA7E /* Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		EF7DBF79B9D746E6923E18B2 /* Pods_StateArchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StateArchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D170E51E567617698E750D /* Pods-StateArch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateArch.release.xcconfig"; path = "Pods/Target Support Files/Pods-StateArch/Pods-StateArch.release.xcconfig"; sourceTree = "<group>"; };
 		F53D30DA1FA432CA003440A3 /* GameReducerRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameReducerRecorder.swift; sourceTree = "<group>"; };
@@ -103,15 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4CEF3B191582549E2105C02 /* Pods_StateArch.framework in Frameworks */,
-				9FA292B82DCAE83DAA6A6C94 /* BuddyBuildSDK.framework in Frameworks */,
-				5EF8209C93B313329756C658 /* AssetsLibrary.framework in Frameworks */,
-				F6DB2FB0E83841FD4F7F191C /* CoreText.framework in Frameworks */,
-				CEC7B120BF34B45F5A9B7B43 /* CoreTelephony.framework in Frameworks */,
-				6887F66617FEC6BD7B62C4AE /* SystemConfiguration.framework in Frameworks */,
-				C3459C22DEE85F8AC81C5B4E /* QuartzCore.framework in Frameworks */,
-				719E76582A7683AF54D6F1C4 /* AVFoundation.framework in Frameworks */,
-				63EEF49100AD68110EB5C350 /* CoreMedia.framework in Frameworks */,
-				C5000343C6B97147B400BB5E /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,15 +114,6 @@
 			children = (
 				1BB67806DB1115971B84DA88 /* Pods_StateArch.framework */,
 				EF7DBF79B9D746E6923E18B2 /* Pods_StateArchTests.framework */,
-				0CE6B2938AD2F2639CD4F696 /* BuddyBuildSDK.framework */,
-				56672943FAE7F6BC33E15081 /* AssetsLibrary.framework */,
-				8DFB28CBC508D21163ABB0BE /* CoreText.framework */,
-				7734020020AB5EB1C92FB2CF /* CoreTelephony.framework */,
-				5F2B62D0F7EDE0B3528AD32C /* SystemConfiguration.framework */,
-				9FD60446261765702948028E /* QuartzCore.framework */,
-				5B779CEAA46241AAD12B0698 /* AVFoundation.framework */,
-				94A7C428F886FEAE07E9FB91 /* CoreMedia.framework */,
-				93E9A10C0CCB4578E05689A8 /* CoreVideo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,7 +174,6 @@
 				F584F51F1F9C50980006E96A /* Products */,
 				7B48ECD12F550CE922EEB1EA /* Pods */,
 				AE1932C4E7924F9BA7D20F0B /* Frameworks */,
-				E508535A74F3823C8789CA7E /* Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -701,17 +663,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KM367XE7J;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = StateArch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DREPLAY";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JimmyBouker.StateArch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -724,15 +681,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KM367XE7J;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = StateArch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JimmyBouker.StateArch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
