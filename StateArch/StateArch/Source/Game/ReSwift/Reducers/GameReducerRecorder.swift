@@ -36,10 +36,8 @@ func gameReducerRecorder(action: Action, state: GameState?) -> GameState {
         // Add state to list & record action
         storedStates.append(nextState)
         let data = Storage.data(storedStates)
-        let json = try? JSONSerialization.jsonObject(with: data, options: [])
-        if let json = json {
-            BuddyBuildSDK.setMetadataObject(json, forKey: "LOL")
-        }
+        let text = String.init(data: data, encoding: .utf8)
+        BuddyBuildSDK.setMetadataObject(text, forKey: "LOL")
         Storage.save(PlayerActionCodable.init(action), filename: lastActionFilename)
     } else if action is ReSwiftInit, storedStates.count == 0 {
         storedStates.append(nextState)
