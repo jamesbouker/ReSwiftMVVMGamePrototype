@@ -35,6 +35,7 @@ func gameReducerRecorder(action: Action, state: GameState?) -> GameState {
 
         // Add state to list & record action
         storedStates.append(nextState)
+        BuddyBuildSDK.setMetadataObject(storedStates, forKey: "LOL")
         Storage.save(PlayerActionCodable.init(action), filename: lastActionFilename)
     } else if action is ReSwiftInit, storedStates.count == 0 {
         storedStates.append(nextState)
